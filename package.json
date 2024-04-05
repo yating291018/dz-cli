@@ -1,0 +1,32 @@
+{
+  "name": "dz-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rollup.config.js",
+  "type": "module",
+  "scripts": {
+    "start": "yarn build && node ./lib/index.es.js create 111",
+    "start:dev": "yarn build && node ./lib/index.es.js createPage vue2 customPageName",
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/cross-spawn": "^6.0.6",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.12.2",
+    "commander": "^12.0.0",
+    "cross-spawn": "^7.0.3",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^9.2.17",
+    "ora": "^8.0.1",
+    "rollup": "^4.13.2",
+    "rollup-plugin-clear": "^2.0.7",
+    "typescript": "^5.4.3"
+  }
+}
